@@ -1,5 +1,5 @@
 const emojis = ['🍕','🍔','🍟','🍩','🍪','🍎','🍌','🍇'];
-    let cards = [...emojis, ...emojis]; // 8 pairs = 16 cards
+    let cards = [...emojis, ...emojis];
     let flippedCards = [];
     let matchedPairs = 0;
     let moves = 0;
