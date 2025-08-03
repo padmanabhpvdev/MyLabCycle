@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Page</h1>
+    <p>Simple and mobile-first landing page</p>
+    <a href="#about" class="btn-primary">Learn More</a>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm a web developer learning to build beautiful and functional websites. This page is made with love using HTML, CSS, and a little JavaScript.</p>
+  </section>
+
+  <section>
+    <h2>Features</h2>
+    <div class="features">
+      <div class="feature-box">
+        <h3>Mobile First</h3>
+        <p>Designed with mobile users in mind.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Simple Code</h3>
+        <p>Easy to read and beginner friendly.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Clean Design</h3>
+        <p>No clutter, just content and layout.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 My Landing Page
+  </footer>
+
+  <button id="topBtn" title="Back to Top">↑</button>
+
+  <script>
+    const topBtn = document.getElementById("topBtn");
+
+    window.onscroll = function () {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        topBtn.style.display = "block";
+      } else {
+        topBtn.style.display = "none";
+      }
+    };
+
+    topBtn.onclick = function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+  </script>
+</body>
+</html>
