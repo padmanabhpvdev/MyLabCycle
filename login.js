@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     if(passwd && confpasswd){
-        //passwd.addEventListener('input', checkPasswords);
         confpasswd.addEventListener('input', checkPasswords);
     }
     function checkPasswords() {
@@ -54,6 +53,7 @@ function newuservalidation(){
         return false;
     }else if(!newuser.value.trim()){
         error.innerText="Please enter username";
+        error.style.color="red";
         return false;
     }else if(!newpass.value.trim()){
         error.innerText="Please enter password";
