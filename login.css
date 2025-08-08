@@ -16,7 +16,9 @@ body {
     background: white;
     border-radius: 10px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-    width: 400px;
+    width: 450px;
+    padding: 20px;
+    height: auto;
     overflow: hidden;
 }
 
@@ -30,7 +32,7 @@ body {
     padding: 15px 0;
     text-align: center;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 600;
     color: #666;
     transition: all 0.3s ease;
     position: relative;
